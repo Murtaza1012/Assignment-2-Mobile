@@ -1,0 +1,13 @@
+{
+    "name": "Unit7_Assignment2_Murtaza",
+    "version": "1.0.0",
+    "main": "path/to/main.css",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}

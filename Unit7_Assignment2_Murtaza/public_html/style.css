@@ -1,0 +1,186 @@
+/* stack overflow has recommended to us to start with zero padding for mobiles */
+* {
+    padding:0;
+    margin: 0;
+    
+}
+/* background in teal and text font for all text in the page for mobiles */
+body{
+    background: rgb(255,0,0); 
+    font-family: "Centory Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+#menu,#note{ /*Ensure all blocks and text are in the middle */
+    font-size: 20px;
+    color: rgb(237,179,43);
+    margin: 15px;
+}
+#container{ /*Ensure all blocks and text are in the middle */
+    text-align: center;
+    margin: 15px auto;/*provide distance from the top */
+    width: 350px; /*Provide the width on the cotent */
+}
+#hr{ /*shifts words or block into a lower level (its invisible) */
+    border-width: 0px;
+    margin: 5px;
+}
+#title{
+    font-size: 50px;
+    border: 7px;
+    font-family: bold;
+    border-style: solid;
+    border-color: rgb(255,255,0);
+    color: rgb(255,255,51);
+    margin: 15px 5px;
+    padding: 0px 5px;
+}
+#instructions{
+    font-size: 50px;
+    border: 5px;
+    font-family: bold;
+    border-style: solid;
+    border-color: rgb(237,179,43);
+    color: rgb(237,179,43);
+    margin: 15px 5px;
+    padding: 0px 5px;
+}
+#level-button{
+    font-size: 55px;
+    border: 6px;
+    border-style: outset;
+    color: white;
+    padding: 5px 45px;
+    
+    text-align: center;
+    text-decoration: blue;
+    display: inline-flex;
+}
+#level-button:active{ /*button changes colour when it's clicked*/
+    border-color: rgb(220,220,220);
+    color: rgb(220,220,220);
+}  
+
+/* css for level 0,1,2*/
+
+#instructions-level{
+    font-size: 22px;
+    color: white;
+    margin-top: -5px;
+}
+#time{
+    font-size: 20px;
+    border: 3.5px;
+    border-style: outset;
+    color: white;
+    padding: 10px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#score{
+    font-size: 20px;
+    border: 3.5px;
+    border-style: outset;
+    color: white;
+    padding: 10px;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#equation{
+    font-size: 40px;
+    border: 7px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+    border-style: outset;
+    border-color: rgb(10,10,10);
+    border-radius: 3cm;
+    color: white;
+    
+    width: 300px;
+    margin: auto;     
+}
+#option1, #option2, #option3, #option4{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    border: 5px;
+    background-color: transparent;
+    color: rgb(255,255,255);
+    border-style: outset;
+    border-color: aliceblue;
+    
+    font-size: 28px;
+    width: 74px;
+    height: 74px;
+    margin: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+/* When the user click on the option, the colour of the button will change to a darker to white*/
+#option1:active{
+    border-color: rgb(220,220,220);
+    color: rgb(220,220,220);
+}
+#option2:active{
+    border-color: rgb(220,220,220);
+    color: rgb(220,220,220);
+}
+#option3:active{
+    border-color: rgb(220,220,220);
+    color: rgb(220,220,220);
+}
+#option4:active{
+    border-color: rgb(220,220,220);
+    color: rgb(220,220,220);
+}
+/* option button when they are disabled, slightly darker */
+#option1:disabled{
+    border-color: rgb(205,205,205);
+    color: rgb(205,205,205);
+}
+#option2:disabled{
+    border-color: rgb(205,205,205);
+    color: rgb(205,205,205);
+}
+#option3:disabled{
+    border-color: rgb(205,205,205);
+    color: rgb(205,205,205);
+}
+#option4:disabled{
+    border-color: rgb(205,205,205);
+    color: rgb(205,205,205);
+}
+/* finished button */
+#Finished{
+    font-size: 45px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    border: 8px;
+    background-color: transparent;
+    color: rgb(0,0,0);
+    border-style: outset;
+    border-color: rgb(0,0,0);
+    
+    margin: 5px auto;
+    padding: 5px 0;
+    text-align: center;
+    width: 325px;
+}
+#next-question{
+    font-size: 45px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    border: 8px;
+    background-color: transparent;
+    color: rgb(0,0,0);
+    border-style: outset;
+    border-color: rgb(0,0,0); 
+    
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+    width: 340px;
+}    

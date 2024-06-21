@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Math Game - Level -2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../style.css"> 
+    </head>
+    <!-- 1- time process -- javascript -->
+    <!-- step: onload= start time -->
+    <body onload=startTime();>
+        <!-- Step: activate audio -->
+        <audio id="my-audio">
+            <source src="../sounds/cheer.mp3">
+        </audio>
+        
+        <!-- Step: in this area will have a limited width to fit my digital screen in vertical-->
+        <div id="menu">
+            <!-- Important information to the use-->
+            <h1 id="title">Level 2 Question 1</h1>
+            <h1 id="instructions-level"> Find the answer to this question</h1>
+            <h1 id="time">10 second</h1>
+            <h1 id="score">Score: 0</h1>
+            
+            <!--Step: this division  has each number and operator seperated as an equation-->
+            <div id="equation"> <!-- concept formula 1+1= -->
+                <h1 id="num1" style="padding: 0 7px">7</h1>
+                <h1 id="operator" style="padding: 0 7px">x</h1>
+                <h1 id="num2" style="padding: 0 7px">5=</h1>
+            </div>
+            
+            <hr>
+            
+            <!-- Step i want to create a button
+                 The button randomly plays a key role as the dummy
+                 answer or the correct answer
+            -->
+            <div>
+                <button onclick="compare_answer(1)" id="option1"></button>
+                <button onclick="compare_answer(2)" id="option2"></button>
+                <button onclick="compare_answer(3)" id="option3"></button>
+                <button onclick="compare_answer(4)" id="option4"></button>
+            </div>
+            
+            <hr>
+            <!-- Step: Starts a function to go to the next question -->
+            <button hidden onclick="startTime()" id="next-question">Next Question</button>
+            <!-- Not a button the user can click -->
+            <h1 hidden id="Finished">Finished!</h1>
+        </div>
+        
+        <!-- activate the javascript -->
+        <script src="script/level-2.js"></script>
+    </body>
+</html>
